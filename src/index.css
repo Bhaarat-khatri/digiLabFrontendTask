@@ -1,13 +1,318 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Inter';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+  font-weight: 500;
+  font-family: 'Inter';
+}
+
+body,
+html,
+.App,
+#root,
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  padding: 2% !important;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 2%;
+  height: 30px;
+  object-fit: cover;
+}
+
+.otpHead2 {
+  width: 344px;
+  height: 48px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+
+  /* Mono/50 */
+
+  color: #7A7A85;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  text-align: left;
+}
+
+.auth-inner {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.otpInput {
+  /* * Input */
+
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 48px !important;
+  height: 56px !important;
+
+  /* Mono/0 */
+
+  background: #FFFFFF;
+  /* Color/Brand 50 */
+
+  border: 1px solid #0858F7;
+  box-shadow: 0px 0px 0px 4px rgba(0, 85, 255, 0.2);
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
+.otpHead3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.otpHead4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.otpHead4>button {
+  /* Button */
+
+
+  width: 39px;
+  height: 24px;
+
+  /* Body accent */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Color/Brand 50 */
+
+  color: #0858F7;
+
+
+  /* Inside auto layout */
+  border: none;
+  background-color: white;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.otpHead4>span {
+
+  /* position: absolute;
+left: 0%;
+right: 0%;
+top: -25%;
+bottom: -25%; */
+
+  /* Body accent */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+
+  /* Mono/20 */
+
+  color: #CACACE;
+}
+
+.banner {
+  position: relative;
+  z-index: 1;
+}
+
+.banner1 {
+  position: relative;
+}
+
+.login {
+  align-items: center;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+
+  width: 344px;
+  height: 64px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  /* or 114% */
+
+  letter-spacing: -0.01em;
+  /* font-feature-settings: 'tnum' */
+  font-size: 2rem;
+  /* text-align: center; */
+  margin: 8% 0;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  color: #0962d6;
+  margin: 0;
+  font-weight: 600;
+
+}
+
+.main {
+  display: flex;
+}
+
+.main>form {
+  margin: auto;
+}
+
+.button {
+  font-size: larger !important;
+  margin-bottom: 8%;
+  padding: 4% !important;
+}
+
+.inputBox {
+  font-size: larger !important;
+  margin-bottom: 8%;
+  padding: 4% !important;
+  display: block;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4%;
+  z-index: 10;
+  position: fixed;
+  text-align: left;
+  padding: 3%;
+}
+
+.create {
+  display: none;
+}
+
+.successText {
+
+  /* Body accent */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Color/Brand 50 */
+  align-items: center;
+  color: #0858F7;
+}
+
+.successPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center!important; */
+  margin: auto;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .footer,
+  .banner {
+    display: none !important;
+  }
+
+  .create {
+    display: block;
+  }
 }
