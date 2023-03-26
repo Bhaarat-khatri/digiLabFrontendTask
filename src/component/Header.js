@@ -6,7 +6,7 @@ export default class Header extends Component {
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
         <img src = {logo} alt= "banner" className="logo"/>
-        <span className="create" >Not Member? <a href="#">Create account</a></span>
+        <span className="create" >Not Member? <a href="/c">Create account</a></span>
         </nav>
     )
   }

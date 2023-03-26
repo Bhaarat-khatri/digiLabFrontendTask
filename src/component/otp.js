@@ -8,7 +8,7 @@ export default class OTP extends Component {
       <form>
         <h3>Enter the  verification code to continue</h3>
         <div className="mb-3 otpHead2">
-          we sent to <a href="#"> hellouser@gmail.com </a>. If you don't see it, check your stream
+          we sent to <a href="/"> hellouser@gmail.com </a>. If you don't see it, check your stream
         </div>
         <div className="mb-3 otpHead3">
           <input

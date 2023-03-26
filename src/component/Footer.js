@@ -4,7 +4,7 @@ export default class footer extends Component {
   render() {
     return (
       <div className="footer">
-      <span>Not Member? <a href="#">Create account</a></span>
+      <span>Not Member? <a href="/">Create account</a></span>
   </div>
     )
   }
